@@ -107,3 +107,9 @@ strong {
 .swal-button {
   background-color: $base-button-bg-color;
 }
+.swal-button:hover{
+  background-color: $base-button-bg-color !important;
+}
+.swal-button:active{
+  background-color: $base-button-bg-color !important;
+}

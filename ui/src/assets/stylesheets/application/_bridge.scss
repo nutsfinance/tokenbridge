@@ -1078,3 +1078,64 @@
         }
     }
 }
+
+// ac
+.bridge {
+    .bridge-home-ac {
+        display: none;
+    }
+    .bridge-foreign-ac {
+        display: none;
+    }
+    .network-details{
+        .details-logo-container-ac{
+            display: none;
+        }
+        .details-body-ac{
+            border-radius: 10px;
+        }
+    }
+    .network-modal .modal .close-button{
+        top: -40px;
+    }
+    .bridge-transfer{
+        .bridge-transfer-content-ac{
+            border-radius: 10px;
+            .form-container{
+                .bridge-form-button{
+                    border-radius: 3px;
+                }
+            }
+        }
+        .left-image-wrapper-ac{
+            background-color: transparent;
+            .left-image{
+                width: 356px;
+                height: 373px;
+                position: absolute;
+                background-color: transparent;
+                background-position: 100% 100%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: -1;
+                transform: translateX(-518px) translateY(-100px);
+            }
+        }
+        .right-image-wrapper-ac{
+            background-color: transparent;
+            .right-image{
+                width: 408px;
+                height: 427px;
+                position: absolute;
+                background-color: transparent;
+                background-position: 100% 100%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                z-index: -1;
+                transform: translateX(500px) translateY(20px);
+            }
+        }
+    }
+}
