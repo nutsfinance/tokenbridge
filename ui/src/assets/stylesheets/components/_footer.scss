@@ -19,6 +19,7 @@
 
   .social-icons {
     order: 2;
+    margin: auto;
 
     @media screen and (max-width: $tablet-width) {
       margin-top: 15px;
@@ -35,6 +36,7 @@
     left: 0;
     order: 0;
     width: $footer-logo-width;
+    display: none;
   }
 
   &-logo-alternative {
