@@ -1,36 +1,91 @@
 import React from 'react'
+// import {
+//   AlternativeIconGithub,
+//   AlternativeIconTelegram,
+//   AlternativeIconTwitter,
+//   IconGithub,
+//   IconPOA,
+//   IconTelegram,
+//   IconTwitter,
+//   IconXDai
+// } from './social-icons'
+
 import {
-  AlternativeIconGithub,
-  AlternativeIconTelegram,
-  AlternativeIconTwitter,
+  IconCoinGecko,
+  IconDeBank,
+  IconDiscord,
+  IconGitbook,
   IconGithub,
-  IconPOA,
+  IconMedium,
   IconTelegram,
   IconTwitter,
-  IconXDai
-} from './social-icons'
+  IconDeFiPulse
+} from './social-icons-ac'
 
 export const SocialIcons = () => {
   const { REACT_APP_UI_STYLES } = process.env
   const useAlternativeIcons = REACT_APP_UI_STYLES === 'stake'
   const iconClass = useAlternativeIcons ? 'social-alternative-icons-item' : 'social-icons-item'
 
+  // const socialItems = [
+  //   {
+  //     icon: useAlternativeIcons ? <IconXDai /> : <IconPOA />,
+  //     link: useAlternativeIcons ? 'https://xdaichain.com/' : 'https://poa.network'
+  //   },
+  //   {
+  //     icon: useAlternativeIcons ? <AlternativeIconTwitter /> : <IconTwitter />,
+  //     link: useAlternativeIcons ? 'https://twitter.com/xdaichain' : 'https://twitter.com/poanetwork'
+  //   },
+  //   {
+  //     icon: useAlternativeIcons ? <AlternativeIconTelegram /> : <IconTelegram />,
+  //     link: useAlternativeIcons ? 'https://t.me/xdaistable' : 'https://t.me/poa_network'
+  //   },
+  //   {
+  //     icon: useAlternativeIcons ? <AlternativeIconGithub /> : <IconGithub />,
+  //     link: useAlternativeIcons ? 'https://github.com/xdaichain' : 'https://github.com/poanetwork/tokenbridge'
+  //   }
+  // ]
+
   const socialItems = [
     {
-      icon: useAlternativeIcons ? <IconXDai /> : <IconPOA />,
-      link: useAlternativeIcons ? 'https://xdaichain.com/' : 'https://poa.network'
+      icon: <IconTwitter />,
+      link: 'https://twitter.com/NUTSFinance'
     },
     {
-      icon: useAlternativeIcons ? <AlternativeIconTwitter /> : <IconTwitter />,
-      link: useAlternativeIcons ? 'https://twitter.com/xdaichain' : 'https://twitter.com/poanetwork'
+      icon: <IconDiscord />,
+      link: 'https://discord.gg/mvANFYe'
     },
     {
-      icon: useAlternativeIcons ? <AlternativeIconTelegram /> : <IconTelegram />,
-      link: useAlternativeIcons ? 'https://t.me/xdaistable' : 'https://t.me/poa_network'
+      icon: <IconTelegram />,
+      link: 'https://t.me/acbtc_community'
     },
     {
-      icon: useAlternativeIcons ? <AlternativeIconGithub /> : <IconGithub />,
-      link: useAlternativeIcons ? 'https://github.com/xdaichain' : 'https://github.com/poanetwork/tokenbridge'
+      icon: <IconMedium />,
+      link: 'https://medium.com/nuts-foundation'
+    }
+    ,
+    {
+      icon: <IconGithub />,
+      link: 'https://github.com/nutsfinance/acBTC'
+    }
+    ,
+    {
+      icon: <IconGitbook />,
+      link: 'https://docs.acbtc.fi/'
+    }
+    ,
+    {
+      icon: <IconCoinGecko />,
+      link: 'https://www.coingecko.com/en/coins/acoconut'
+    },
+    {
+      icon: <IconDeFiPulse />,
+      link: 'https://defipulse.com/btc/acbtc'
+    }
+    ,
+    {
+      icon: <IconDeBank />,
+      link: 'https://debank.com/projects/acbtc'
     }
   ]
 

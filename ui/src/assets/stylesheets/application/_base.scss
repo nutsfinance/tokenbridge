@@ -113,3 +113,18 @@ strong {
 .swal-button:active{
   background-color: $base-button-bg-color !important;
 }
+.social-icons-item{
+  background-color: transparent !important;
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 768px){
+.social-icons-item{
+  img{
+    width: 20px;
+    height: 20px;
+  }
+}
+}
